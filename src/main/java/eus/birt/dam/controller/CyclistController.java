@@ -42,7 +42,7 @@ public class CyclistController {
 	@PostMapping("/new/submit")
 	public String submitCreationForm(@ModelAttribute Cyclist cyclist) {
 		cyclistRepository.save(cyclist);
-		return "redirect:/cyclists/";
+		return "redirect:/cyclists";
 	}
 	
 	@GetMapping("/edit/{id}")

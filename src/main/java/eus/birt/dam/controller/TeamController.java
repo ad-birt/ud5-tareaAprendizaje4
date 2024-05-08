@@ -35,7 +35,7 @@ TeamRepository teamRepository;
 	@PostMapping("/new/submit")
 	public String processCreationForm(@ModelAttribute Team team) {
 		teamRepository.save(team);
-		return "redirect:/teams/";
+		return "redirect:/teams";
 	}
 	
 	@GetMapping("/edit/{id}")
